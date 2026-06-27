@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系咨询 - 定制旅行规划 | 超值假期旅游咨询</title>
+  <meta name="description" content="联系超值假期旅游咨询顾问，提交你的旅行需求，获取免费初步行程方案。">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav">
+      <a href="/" class="logo">
+        <div class="logo-icon">CZ</div>
+        <div class="logo-text">
+          超值假期
+          <span class="logo-accent">Hangzhou Super Value Holiday</span>
+        </div>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="/" class="nav-link">首页</a>
+        <a href="/destinations.html" class="nav-link">目的地</a>
+        <a href="/destinations/australia.html" class="nav-link">澳大利亚</a>
+        <a href="/contact.html" class="nav-link active">联系咨询</a>
+        <a href="/contact.html" class="btn btn-primary nav-cta">咨询顾问</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="height:40vh;min-height:320px;">
+    <img
+      src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920&q=80"
+      alt="旅行规划咨询"
+      class="hero-bg"
+      loading="eager"
+    >
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>联系咨询</h1>
+      <p>告诉我们你的旅行想法，专业顾问为你免费规划</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-wrap">
+        <!-- Form -->
+        <div class="contact-form-wrap">
+          <h3 style="font-size:1.3rem;color:var(--ink-green);margin-bottom:24px;">提交旅行需求</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">姓名/称呼 *</label>
+                <input type="text" id="name" name="name" required placeholder="如：张先生">
+              </div>
+              <div class="form-group">
+                <label for="contact">手机号或微信 *</label>
+                <input type="text" id="contact" name="contact" required placeholder="方便我们联系你">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="destination">计划目的地</label>
+              <select id="destination" name="destination">
+                <option value="">请选择目的地</option>
+                <option value="australia">澳大利亚</option>
+                <option value="newzealand">新西兰</option>
+                <option value="japan">日本</option>
+                <option value="europe">欧洲</option>
+                <option value="southeastasia">东南亚</option>
+                <option value="maldives">马尔代夫/海岛</option>
+                <option value="other">其他</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="travelers">出行人数</label>
+                <input type="text" id="travelers" name="travelers" placeholder="如：2大1小">
+              </div>
+              <div class="form-group">
+                <label for="travelDate">预计出行时间</label>
+                <input type="text" id="travelDate" name="travelDate" placeholder="如：2026年10月">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="budget">预算范围（每人）</label>
+              <select id="budget" name="budget">
+                <option value="">请选择预算范围</option>
+                <option value="5000-10000">5,000 - 10,000 元</option>
+                <option value="10000-20000">10,000 - 20,000 元</option>
+                <option value="20000-30000">20,000 - 30,000 元</option>
+                <option value="30000+">30,000 元以上</option>
+                <option value="flexible">弹性，看方案再定</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">特别需求</label>
+              <textarea id="message" name="message" placeholder="有任何特别需求或想法都可以告诉我们，比如：偏好的酒店风格、交通方式、特殊饮食需求等"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              提交旅行需求
+            </button>
+            <p style="font-size:0.8rem;color:var(--lime-gray);margin-top:12px;text-align:center;">
+              提交即表示你同意我们与你联系并提供旅行咨询服务
+            </p>
+          </form>
+          <div id="formSuccess" style="display:none;text-align:center;padding:40px 0;">
+            <div style="font-size:3rem;margin-bottom:16px;">✓</div>
+            <h4 style="color:var(--ink-green);font-size:1.2rem;margin-bottom:8px;">需求已收到！</h4>
+            <p style="color:var(--lime-gray);">我们的旅行顾问将在24小时内与你联系，请保持通讯畅通。</p>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info-side">
+          <h3>联系我们</h3>
+          <p>无论你是已经有初步想法，还是完全不知道从哪里开始，都可以联系我们。我们会认真倾听你的需求，给出专业建议。</p>
+
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="contact-method-icon">📞</div>
+              <div>
+                <h5>电话咨询</h5>
+                <p>400-xxx-xxxx<br>工作日 9:00 - 18:00</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-method-icon">💬</div>
+              <div>
+                <h5>微信咨询</h5>
+                <p>微信号：czjq_consult<br>或扫描二维码添加</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-method-icon">✉️</div>
+              <div>
+                <h5>电子邮件</h5>
+                <p>info@czjq.com<br>我们会在1-2个工作日内回复</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-method-icon">📍</div>
+              <div>
+                <h5>公司信息</h5>
+                <p>杭州超值假期旅游咨询有限公司<br>杭州 · 线上服务全国</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner" style="padding:60px 0;">
+    <div class="container">
+      <div class="cta-content">
+        <h2>还在犹豫？随时联系我们</h2>
+        <p>没有任何压力，只是聊聊你的旅行想法。我们相信好的旅行从一次轻松的对话开始。</p>
+        <a href="tel:400-xxx-xxxx" class="btn btn-primary">拨打咨询电话</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>超值假期旅游咨询</h3>
+          <p class="footer-tagline">Hangzhou Super Value Holiday Travel Consulting</p>
+          <p>专注于为家庭、情侣与小团体提供安心、省心、有品质的出境旅行定制服务。</p>
+        </div>
+        <div>
+          <h4>目的地</h4>
+          <ul class="footer-links">
+            <li><a href="/destinations/australia.html">澳大利亚</a></li>
+            <li><a href="/destinations.html">新西兰</a></li>
+            <li><a href="/destinations.html">日本</a></li>
+            <li><a href="/destinations.html">欧洲</a></li>
+            <li><a href="/destinations.html">东南亚</a></li>
+            <li><a href="/destinations.html">海岛度假</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>主题旅行</h4>
+          <ul class="footer-links">
+            <li><a href="/destinations.html">亲子家庭</a></li>
+            <li><a href="/destinations.html">蜜月情侣</a></li>
+            <li><a href="/destinations.html">小团定制</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>联系我们</h4>
+          <ul class="contact-info">
+            <li><span class="contact-icon">📞</span> 咨询电话：400-xxx-xxxx</li>
+            <li><span class="contact-icon">💬</span> 微信：czjq_consult</li>
+            <li><span class="contact-icon">✉️</span> 邮箱：info@czjq.com</li>
+            <li><span class="contact-icon">📍</span> 杭州 · 线上服务全国</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 杭州超值假期旅游咨询有限公司 All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
